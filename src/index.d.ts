@@ -5,7 +5,7 @@ interface IObject {
 interface IOptions {
   messages?: any;
   className?: any;
-  autoForceUpdate?: boolean;
+  autoForceUpdate?: any;
   element?: any;
   locale?: string;
 }
