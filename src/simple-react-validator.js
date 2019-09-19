@@ -112,6 +112,10 @@ class SimpleReactValidator {
   }
 
   fieldValid(field) {
+    if (!this.messagesShown || !this.visibleFields.includes(field)) {
+        return true;
+    }
+    console.log(this.fields.hasOwnProperty(field));
     return this.fields[field] === true;
   }
 
