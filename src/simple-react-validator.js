@@ -112,7 +112,7 @@ class SimpleReactValidator {
   }
 
   fieldValid(field) {
-    return this.fields.hasOwnProperty(field) && this.fields[field] === true;
+    return this.fields[field] === true;
   }
 
   purgeFields() {
